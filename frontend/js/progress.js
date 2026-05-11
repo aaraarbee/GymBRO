@@ -34,7 +34,7 @@ async function getWorkouts(){
     const response =
     await fetch(
 
-      `http://localhost:5000/api/workouts/${user._id}`
+      `https://gymbro-backend-vzz0.onrender.com/api/workouts/${user._id}`
 
     );
 
