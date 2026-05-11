@@ -1,0 +1,367 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:
+linear-gradient(
+  to bottom right,
+  #050505,
+  #111111,
+  #0a0a0a
+);
+  color:white;
+}
+
+
+/* NAVBAR */
+
+nav{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:18px 50px;
+
+  background:#0d0d0d;
+
+  border-bottom:1px solid #222;
+}
+
+.logo{
+
+  font-size:28px;
+
+  font-weight:bold;
+
+  color:orange;
+}
+
+nav ul{
+
+  display:flex;
+
+  gap:30px;
+
+  list-style:none;
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+}
+
+.active{
+
+  color:orange;
+
+  border-bottom:2px solid orange;
+
+  padding-bottom:4px;
+}
+
+#logoutBtn{
+
+  color:orange;
+
+  cursor:pointer;
+
+  font-weight:bold;
+}
+
+
+/* HERO */
+
+.hero{
+
+  text-align:center;
+
+  margin-top:45px;
+}
+
+.hero h1{
+
+  font-size:52px;
+
+  margin-bottom:10px;
+
+  font-weight:bold;
+}
+
+.hero span{
+
+  color:orange;
+}
+
+.hero p{
+
+  font-size:18px;
+
+  color:#999;
+}
+
+
+/* STREAK */
+
+.streak-container{
+
+  display:flex;
+
+  justify-content:center;
+
+  margin-top:35px;
+}
+
+.streak-card{
+
+  width:280px;
+
+  background:#111;
+
+  border:2px solid orange;
+
+  border-radius:18px;
+
+  text-align:center;
+
+  padding:25px;
+
+  box-shadow:0px 0px 15px rgba(255,140,0,0.18);
+}
+
+.streak-card h2{
+
+  margin-bottom:10px;
+
+  font-size:24px;
+}
+
+.streak-card p{
+
+  font-size:40px;
+
+  font-weight:bold;
+
+  color:orange;
+}
+
+
+/* BODY GRID */
+
+.body-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(240px,1fr));
+
+  gap:28px;
+
+  padding:50px;
+}
+
+
+/* BODY CARD */
+
+.body-card{
+
+  position:relative;
+
+  height:380px;
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  border:2px solid rgba(255,140,0,0.35);
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:flex-end;
+}
+
+.body-card:hover{
+
+  transform:translateY(-6px);
+
+  border-color:orange;
+
+  box-shadow:0px 0px 20px rgba(255,140,0,0.3);
+}
+
+
+/* OVERLAY */
+
+.overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,0.15)
+  );
+}
+
+
+/* CARD TITLE */
+
+.body-card h2{
+
+  position:relative;
+
+  z-index:2;
+
+  margin-bottom:22px;
+
+  font-size:34px;
+
+  font-weight:bold;
+}
+
+
+/* IMAGES */
+
+.chest{
+  background-image:
+  url("../assets/bodyparts/chest.png");
+}
+
+.biceps{
+  background-image:
+  url("../assets/bodyparts/bicep.jpeg");
+}
+
+.triceps{
+  background-image:
+  url("../assets/bodyparts/tricep.jpg");
+}
+
+.back{
+  background-image:
+  url("../assets/bodyparts/back.jpeg");
+}
+
+.legs{
+  background-image:
+  url("../assets/bodyparts/legs.jpg");
+}
+
+.shoulders{
+  background-image:
+  url("../assets/bodyparts/shoulders.jpg");
+}
+
+.abs{
+  background-image:
+  url("../assets/bodyparts/abs.avif");
+}
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+  /* NAVBAR */
+
+  nav{
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:20px;
+  }
+
+
+  nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+  }
+
+
+  /* HERO */
+
+  .hero{
+
+    margin-top:30px;
+  }
+
+  .hero h1{
+
+    font-size:38px;
+  }
+
+  .hero p{
+
+    font-size:16px;
+  }
+
+
+  /* STREAK */
+
+  .streak-card{
+
+    width:90%;
+  }
+
+
+  .streak-card h2{
+
+    font-size:22px;
+  }
+
+  .streak-card p{
+
+    font-size:34px;
+  }
+
+
+  /* BODY GRID */
+
+  .body-grid{
+
+    grid-template-columns:1fr;
+
+    padding:25px;
+  }
+
+
+  .body-card{
+
+    height:320px;
+  }
+
+
+  .body-card h2{
+
+    font-size:30px;
+  }
+}

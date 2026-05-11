@@ -1,0 +1,214 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:
+linear-gradient(
+  to bottom right,
+  #050505,
+  #111111,
+  #0a0a0a
+);
+  color:white;
+}
+
+
+/* CONTAINER */
+
+.progress-container{
+
+  padding:45px 90px;
+}
+
+
+/* TITLE */
+
+.progress-container h1{
+
+  font-size:48px;
+
+  color:orange;
+
+  margin-bottom:45px;
+}
+
+
+/* HISTORY */
+
+.history-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:35px;
+}
+
+
+/* DATE SECTION */
+
+.date-section{
+
+  border-left:3px solid orange;
+
+  padding-left:22px;
+}
+
+
+/* DATE */
+
+.date-title{
+
+  font-size:28px;
+
+  color:orange;
+
+  margin-bottom:18px;
+}
+
+
+/* EXERCISE */
+
+.exercise-item{
+
+  margin-bottom:18px;
+
+  padding-bottom:12px;
+
+  border-bottom:1px solid #222;
+}
+
+.exercise-item h2{
+
+  font-size:22px;
+
+  margin-bottom:8px;
+}
+
+.exercise-item p{
+
+  font-size:16px;
+
+  color:#bbb;
+
+  line-height:1.6;
+}
+
+
+/* CHART */
+
+.chart-section{
+
+  margin-top:70px;
+
+  background:#111;
+
+  padding:35px;
+
+  border-radius:20px;
+
+  border:2px solid orange;
+
+  box-shadow:0px 0px 18px rgba(255,140,0,0.15);
+}
+
+.chart-section h1{
+
+  color:orange;
+
+  margin-bottom:30px;
+
+  text-align:center;
+
+  font-size:36px;
+}
+
+
+/* DROPDOWN */
+
+#exerciseSelect{
+
+  width:260px;
+
+  padding:12px;
+
+  margin-bottom:35px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#222;
+
+  color:white;
+
+  font-size:16px;
+
+  display:block;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+  outline:none;
+
+  cursor:pointer;
+}
+
+
+/* GRAPH */
+
+#progressChart{
+
+  background:#0a0a0a;
+
+  padding:18px;
+
+  border-radius:18px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .progress-container{
+
+    padding:25px;
+  }
+
+
+  .progress-container h1{
+
+    font-size:38px;
+  }
+
+
+  .date-title{
+
+    font-size:24px;
+  }
+
+
+  .exercise-item h2{
+
+    font-size:20px;
+  }
+
+
+  .chart-section{
+
+    padding:20px;
+  }
+
+
+  #exerciseSelect{
+
+    width:100%;
+  }
+}

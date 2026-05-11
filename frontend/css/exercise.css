@@ -1,0 +1,185 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:
+linear-gradient(
+  to bottom right,
+  #050505,
+  #111111,
+  #0a0a0a
+);
+  color:white;
+}
+
+
+/* MAIN CONTAINER */
+
+.exercise-container{
+  padding:60px;
+}
+
+
+/* PAGE TITLE */
+
+#bodyPartTitle{
+
+  text-align:center;
+
+  font-size:60px;
+
+  margin-bottom:60px;
+
+  color:orange;
+}
+
+
+/* EXERCISE LIST */
+
+.exercise-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:40px;
+}
+
+
+/* EXERCISE CARD */
+
+.exercise-card{
+
+  width:400px;
+
+  margin:auto;
+
+  background:#111;
+
+  padding:35px;
+
+  border-radius:20px;
+
+  border:2px solid orange;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+  transition:0.3s;
+}
+
+.exercise-card:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0px 0px 20px rgba(255,140,0,0.3);
+}
+
+
+/* EXERCISE TITLE */
+
+.exercise-card h2{
+
+  text-align:center;
+
+  font-size:28px;
+}
+
+
+/* INPUTS */
+
+.exercise-card input{
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#222;
+
+  color:white;
+
+  font-size:16px;
+
+  outline:none;
+}
+
+.exercise-card input:focus{
+
+  border:2px solid orange;
+}
+
+
+/* BUTTON */
+
+.exercise-card button{
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:orange;
+
+  color:black;
+
+  font-weight:bold;
+
+  font-size:17px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.exercise-card button:hover{
+
+  transform:scale(1.03);
+
+  background:#ffbb33;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .exercise-container{
+
+    padding:25px;
+  }
+
+
+  #bodyPartTitle{
+
+    font-size:38px;
+  }
+
+
+  .exercise-list{
+
+    grid-template-columns:1fr;
+  }
+
+
+  .exercise-card{
+
+    width:100%;
+  }
+
+
+  .exercise-card h2{
+
+    font-size:28px;
+  }
+}
