@@ -151,7 +151,7 @@ if(loginForm){
         const response =
         await fetch(
 
-          "http://gymbro-backend-vzz0.onrender.com/api/auth/login",
+          "https://gymbro-backend-vzz0.onrender.com/api/auth/login",
 
           {
 
