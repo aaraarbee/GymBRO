@@ -93,7 +93,7 @@ if(signupForm){
 
 
         window.location.href =
-        "./login.html";
+        "/pages/login.html";
 
       }
 
@@ -199,7 +199,7 @@ if(loginForm){
 
 
         window.location.href =
-        "./dashboard.html";
+        "/pages/dashboard.html";
 
       }
 
